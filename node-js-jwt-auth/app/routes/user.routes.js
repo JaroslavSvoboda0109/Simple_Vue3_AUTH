@@ -9,7 +9,8 @@ module.exports = function(app) {
     );
     next();
   });
-
+  app.get("/api/test/subscribe", controller.subscribe);
+  
   app.get("/api/test/all", controller.allAccess);
 
   app.get(
